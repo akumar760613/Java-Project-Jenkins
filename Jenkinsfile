@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stages ('build') {
+    stage ('build') {
       steps{
        sh "ant -f build.xml -v"
        }
